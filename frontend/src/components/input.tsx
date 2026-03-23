@@ -1,5 +1,3 @@
-import React from "react";
-
 interface InputProps {
   width: "sm" | "md" | "lg";
   height: "sm" | "md" | "lg";
