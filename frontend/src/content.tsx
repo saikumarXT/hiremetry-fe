@@ -1,5 +1,3 @@
-import React from "react";
-
 function Content() {
   return (
     <div className="px-10 py-16 space-y-32 bg-gray-50">
