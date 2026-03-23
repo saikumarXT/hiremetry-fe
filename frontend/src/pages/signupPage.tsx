@@ -5,13 +5,13 @@ import axios from "axios";
 
 export function SignupPage() {
   const navigate = useNavigate();
-  const emailRef = useRef<HTMLInputElement>();
-  const passwordRef = useRef<HTMLInputElement>();
+  const emailRef = useRef<HTMLInputElement>(null);
+  const passwordRef = useRef<HTMLInputElement>(null);
 
   async function signup() {
     try {
-      const email = emailRef.current.value;
-      const password = passwordRef.current.value;
+      const email = emailRef.current?.value;
+      const password = passwordRef.current?.value;
 
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/auth/register`,
